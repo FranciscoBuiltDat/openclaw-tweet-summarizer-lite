@@ -1,6 +1,14 @@
 ---
 name: tweet-summarizer-lite
 description: Fetch and summarize single tweets from Twitter/X. Basic search and single tweet fetching. Lightweight version perfect for quick tweet lookups.
+requiredEnv:
+  - AUTH_TOKEN
+  - CT0
+requiredBins:
+  - bird
+permissions:
+  - network: Contact X/Twitter API via bird CLI (uses session cookies)
+  - filesystem: Write tweets to ~/.openclaw/workspace/data/tweets/
 ---
 
 # Tweet Summarizer Lite

@@ -1,13 +1,21 @@
 {
   "name": "openclaw-tweet-summarizer-lite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fetch and summarize single tweets from Twitter/X - Lite version",
   "main": "scripts/tweet.py",
   "scripts": {
     "tweet": "python3 scripts/tweet.py",
     "search": "python3 scripts/search_tweets.py",
-    "summarize": "python3 scripts/summarize.py"
+    "summarize": "python3 scripts/summarize.py",
+    "config": "python3 scripts/config.py"
   },
+  "requiredEnv": [
+    "AUTH_TOKEN",
+    "CT0"
+  ],
+  "requiredBins": [
+    "bird"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/openclaw/openclaw-tweet-summarizer-lite.git"
